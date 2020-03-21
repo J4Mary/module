@@ -1,0 +1,24 @@
+def spam(number):
+    return 'bulochka'*number
+
+
+def my_sum(list_of_numbers):
+    s=0
+    for i in list_of_numbers:
+        s+=i
+    #  ...wite your code here
+    return s
+
+def shortener(string):
+    l=string.split()
+    l1=[]
+    for word in l:
+        if len(word)>6:
+            word=word[0:7]+'*'
+        l1.append(word)
+    s=' '.join(l1)
+    return s
+
+def compare_ends(words):
+    l1=[word for word in words if len(word)>=2 and word[0]==word[-1]]
+    return len(l1)
