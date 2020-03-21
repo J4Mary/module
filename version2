@@ -6,7 +6,6 @@ def my_sum(list_of_numbers):
     s=0
     for i in list_of_numbers:
         s+=i
-    #  ...wite your code here
     return s
 
 def shortener(string):
