@@ -47,7 +47,7 @@ def shortener(string):
     l1=[]
     for word in l:
         if len(word)>6:
-            word=word[0:7]+'*'
+            word=word[0:6]+'*'
         l1.append(word)
     s=' '.join(l1)
     return s
@@ -68,7 +68,7 @@ def compare_ends(words):
     """
     l1=[]
     for word in words:
-        if len(word)>2 and word[0]==word[-1]:
+        if len(word)>=2 and word[0]==word[-1]:
             l1.append(word)
     return len(l1)
     #  ...wite your code here
